@@ -2,9 +2,24 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Hello wasm-pack!</title>
+    <title>Conway's Game Of Life</title>
+    <style type="text/css">
+      body {
+        position: absolute;
+        background-color: bisque;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
   </head>
   <body>
+    <pre id="game-of-life-canvas"></pre>
     <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
     <script src="./bootstrap.js"></script>
   </body>
